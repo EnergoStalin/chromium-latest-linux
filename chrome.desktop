@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Chromium
+Comment=Browser
+Exec=$BASEDIR/latest/chrome %U
+Terminal=false
+Type=Application
+Icon=$LOGO
+Categories=Network;WebBrowser;
+MimeType=$MIMETYPES
+StartupNotify=true
+StartupWMClass=chromium

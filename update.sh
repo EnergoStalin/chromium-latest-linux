@@ -23,6 +23,12 @@ rm -rf $REVISION
 mkdir $REVISION
 pushd $REVISION
 curl -# $ZIP_URL > $ZIP_FILE
+
+echo "removing previous versions"
+prev="$(find ../ -maxdepth 1 -type d | grep -E '.*\/[0-9]+' | grep -v $REVISION)"
+echo -e "$prev"
+rm -r $prev
+
 echo "unzipping.."
 unzip $ZIP_FILE
 popd

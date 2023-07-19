@@ -1,2 +1,2 @@
 # chromium-latest-linux
-Scripts to download and run the latest Linux build of Chromium.
+Scripts to download, update and install(.desktop) the latest Linux build of Chromium. A substitute for Chrome Canary on Linux.
