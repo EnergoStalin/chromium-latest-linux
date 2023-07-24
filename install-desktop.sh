@@ -33,3 +33,5 @@ export MIMETYPES=$(echo "$mimetypes" | tr '\n' ';')
 export BASEDIR="$(dirname "$(realpath $0)")"
 export LOGO="$(realpath -se "$(find -L ./latest -type f -name *.png)")"
 cat $1 | envsubst | tee $HOME/.local/share/applications/$1
+
+update-desktop-database $HOME/.local/share/applications
